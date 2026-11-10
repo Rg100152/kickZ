@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KICKZ | Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>#preloader{display:none}.reveal{opacity:1;transform:none}</style></noscript>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <div id="preloader">
+    <div class="loader-logo">KICK<span>Z</span></div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <div id="progress-bar"></div>
+
+  <header class="navbar" id="navbar">
+    <a href="index.html" class="logo">KICK<span>Z</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <section class="page-hero">
+    <h1>All <span>Sneakers</span></h1>
+    <p>Find your perfect pair from our latest collection.</p>
+  </section>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="running">Running</button>
+    <button class="filter-btn" data-filter="basketball">Basketball</button>
+    <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+  </div>
+
+  <section class="product-grid">
+    <article class="product-card reveal" data-category="running">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Air Max Elite">
+      </div>
+      <h3>Air Max Elite</h3>
+      <p class="price">$150.00</p>
+      <button class="add-btn" data-add>Add to Cart</button>
+    </article>
+
+    <article class="product-card reveal" data-category="lifestyle">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Urban Runner">
+      </div>
+      <h3>Urban Runner</h3>
+      <p class="price">$120.00</p>
+      <button class="add-btn" data-add>Add to Cart</button>
+    </article>
+
+    <article class="product-card reveal" data-category="basketball">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Street Style Pro">
+      </div>
+      <h3>Street Style Pro</h3>
+      <p class="price">$180.00</p>
+      <button class="add-btn" data-add>Add to Cart</button>
+    </article>
+
+    <article class="product-card reveal" data-category="lifestyle">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Classic Canvas">
+      </div>
+      <h3>Classic Canvas</h3>
+      <p class="price">$90.00</p>
+      <button class="add-btn" data-add>Add to Cart</button>
+    </article>
+
+    <article class="product-card reveal" data-category="basketball">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Court Vision Low">
+      </div>
+      <h3>Court Vision Low</h3>
+      <p class="price">$135.00</p>
+      <button class="add-btn" data-add>Add to Cart</button>
+    </article>
+
+    <article class="product-card reveal" data-category="running">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Aero Glide">
+      </div>
+      <h3>Aero Glide</h3>
+      <p class="price">$160.00</p>
+      <button class="add-btn" data-add>Add to Cart</button>
+    </article>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">KICK<span>Z</span></a>
+        <p>Premium sneakers for those who never settle. Engineered for comfort, built for the streets.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="shop.html">All Sneakers</a>
+        <a href="shop.html">Running</a>
+        <a href="shop.html">Basketball</a>
+        <a href="shop.html">Lifestyle</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Careers</a>
+        <a href="#">Stores</a>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Get drops and offers before anyone else.</p>
+        <form class="newsletter" data-newsletter>
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 KICKZ. All rights reserved.</span>
+      <span>Privacy &middot; Terms &middot; Cookies</span>
+    </div>
+  </footer>
+
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-overlay" data-close-cart></div>
+    <aside class="cart-panel">
+      <div class="cart-head">
+        <h3>Your Cart</h3>
+        <button class="cart-close" data-close-cart aria-label="Close cart">&times;</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-foot">
+        <div class="cart-total">Total <span id="cartTotal">$0.00</span></div>
+        <button class="btn-checkout" id="checkoutBtn">Checkout</button>
+      </div>
+    </aside>
+  </div>
+
+  <div id="toast"></div>
+
+</body>
+</html>
